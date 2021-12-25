@@ -11,4 +11,5 @@ jobs:
       - name: run
         env:
           NAME_OF_THE_ONE: ${{ secrets.NAME_OF_THE_ONE }}
-        run: echo "$NAME_OF_THE_ONE"
+        run:
+          "$NAME_OF_THE_ONE"
