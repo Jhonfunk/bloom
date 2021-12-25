@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+      - name: pop
+        with:
+          name_of_the_one: ${{ NAME_OF_THE_ONE }}
       - name: run
-        run: echo "${{NAME_OF_THE_ONE}}"
+        run: echo "$NAME_OF_THE_ONE"
