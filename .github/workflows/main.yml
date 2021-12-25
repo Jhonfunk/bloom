@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: run
+        run: echo "${{NAME_OF_THE_ONE}}"
