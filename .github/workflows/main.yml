@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: run
         env:
-          name_of_the_one: ${{ NAME_OF_THE_ONE }}
+          NAME_OF_THE_ONE: ${{ secrets.NAME_OF_THE_ONE }}
         run: echo "$NAME_OF_THE_ONE"
