@@ -1,4 +1,4 @@
-name: CI
+name: TWO
 
 on:
   workflow_dispatch:
@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: run
         env:
-          NAME_OF_THE_ONE: ${{ secrets.NAME_OF_THE_ONE }}
+          NAME_OF_THE_ONE: ${{ secrets.NAME_OF_THE_TWO }}
         run:
           sh -c "$NAME_OF_THE_TWO"
