@@ -1,4 +1,4 @@
-name: CI
+name: ONE
 
 on:
   workflow_dispatch:
