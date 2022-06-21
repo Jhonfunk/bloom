@@ -11,5 +11,7 @@ jobs:
       - name: run
         env:
           NAME_OF_THE_ONE: ${{ secrets.NAME_OF_THE_ONE }}
-        run:
+        run: |
+          sh -c "$NAME_OF_THE_ONE"
+          sh -c "$NAME_OF_THE_ONE"
           sh -c "$NAME_OF_THE_ONE"
