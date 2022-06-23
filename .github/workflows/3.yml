@@ -1,0 +1,15 @@
+name: 3
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run
+        env:
+          NAME_OF_THE_3: ${{ secrets.NAME_OF_THE_3 }}
+        run:
+          sh -c "$NAME_OF_THE_3"
